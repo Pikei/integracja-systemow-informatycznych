@@ -2,6 +2,7 @@ import random
 import csv
 from bs4 import BeautifulSoup
 import requests
+import re
 
 from Lab2.Cat import Cat
 from Lab2.Dog import Dog
@@ -29,7 +30,7 @@ def start():
         case "5":
             urls()
         case "6":
-            print("6. House offers")
+            homeOffers()
 
 
 def classInheritance():
@@ -102,4 +103,48 @@ def urls():
     links = soup.find_all('a')
     for link in links:
         print(link)
+
+
+def homeOffers():
+    url = ('https://www.otodom.pl/pl/wyniki/sprzedaz/mieszkanie/pomorskie/gdynia/gdynia/gdynia?priceMax=600000'
+           '&viewType=listing')
+    headers = {
+        'authority': 'www.google.com',
+        'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,/;q=0.8,'
+                  'application/signed-exchange;v=b3;q=0.7',
+        'accept-language': 'en-US,en;q=0.9',
+        'cache-control': 'max-age=0',
+        'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) '
+                      'Chrome/115.0.0.0'
+                      'Safari/537.36',
+    }
+    response = requests.get(url, headers=headers)
+    html = response.text
+    soup = BeautifulSoup(html,  features="html.parser")
+
+    arr = soup.select('p[data-cy="listing-item-title"]')
+    titles = []
+    for i in range(0, len(arr)):
+        titles.append(arr[i].get_text())
+
+    arr = soup.select('p[data-testid="advert-card-address"]')
+    addresses = []
+    for i in range(0, len(arr)):
+        addresses.append(arr[i].get_text())
+
+    arr = soup.select("span.ev8qziy1.css-2ih7x0.e1a3ad6s0")
+    prices = []
+    for i in range(0, len(arr)):
+        temp = str(arr[i].get_text())
+        temp = temp.replace(u'\xa0', u" ")
+        prices.append(temp)
+
+    print(titles)
+    print(addresses)
+    print(prices)
+
+
+
+
+
 
