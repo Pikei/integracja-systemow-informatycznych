@@ -7,6 +7,7 @@ import re
 from Lab2.Cat import Cat
 from Lab2.Dog import Dog
 from Lab2.Fox import Fox
+from Lab2.Home import Home
 
 
 def start():
@@ -122,26 +123,31 @@ def homeOffers():
     html = response.text
     soup = BeautifulSoup(html,  features="html.parser")
 
-    arr = soup.select('p[data-cy="listing-item-title"]')
-    titles = []
-    for i in range(0, len(arr)):
-        titles.append(arr[i].get_text())
+    end = len(soup.select('p[data-cy="listing-item-title"]'))
+    home_offers = []
 
-    arr = soup.select('p[data-testid="advert-card-address"]')
-    addresses = []
-    for i in range(0, len(arr)):
-        addresses.append(arr[i].get_text())
-
-    arr = soup.select("span.ev8qziy1.css-2ih7x0.e1a3ad6s0")
-    prices = []
-    for i in range(0, len(arr)):
+    for i in range(0, end):
+        arr = soup.select('p[data-cy="listing-item-title"]')
+        title = arr[i].get_text()
+        arr = soup.select('p[data-testid="advert-card-address"]')
+        address = arr[i].get_text()
+        arr = soup.select("span.ev8qziy1.css-2ih7x0.e1a3ad6s0")
         temp = str(arr[i].get_text())
-        temp = temp.replace(u'\xa0', u" ")
-        prices.append(temp)
+        price = temp.replace(u'\xa0', u" ")
+        arr = soup.select("dl.css-uki0wd.e12r8p6s1 dd")
+        price_for_m2 = ""
+        m2 = ""
+        for j in range(0, len(arr)):
+            temp = str(arr[j].get_text())
+            if temp.__contains__("zł/m²"):
+                temp = temp.replace(u'\xa0', u" ")
+                price_for_m2 = temp
+            elif temp.__contains__(" m²"):
+                temp = temp.replace(u'\xa0', u" ")
+                m2 = temp
+        home_offers.append(Home(title, address, price, price_for_m2, m2))
+        home_offers[i].print_values()
 
-    print(titles)
-    print(addresses)
-    print(prices)
 
 
 
