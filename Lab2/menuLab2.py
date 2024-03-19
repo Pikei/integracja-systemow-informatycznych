@@ -124,9 +124,6 @@ def homeOffers():
     html = response.text
     soup = BeautifulSoup(html, features="html.parser")
 
-    end = len(soup.select('p[data-cy="listing-item-title"]'))
-    home_offers = {}
-
     with open('Lab2/home.csv', 'w', newline='', encoding='UTF8') as csvfile:
         fieldnames = ["Number", "Name", "Address", "Price", "Price for square meter", "Apartment area"]
         writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
@@ -137,34 +134,28 @@ def homeOffers():
         prices = soup.select("span.ev8qziy1.css-2ih7x0.e1a3ad6s0")
         arr = soup.select("dl.css-uki0wd.e12r8p6s1 dd")
 
+        end = len(titles)
+        home_offers = {}
+
         for i in range(0, end):
-            # arr = soup.select('p[data-cy="listing-item-title"]')
             title = titles[i].get_text()
-            # arr = soup.select('p[data-testid="advert-card-address"]')
             address = addresses[i].get_text()
-            # arr = soup.select("span.ev8qziy1.css-2ih7x0.e1a3ad6s0")
-            temp = str(prices[i].get_text())
+            temp = prices[i].get_text()
             price = temp.replace(u'\xa0', u" ")
-            # arr = soup.select("dl.css-uki0wd.e12r8p6s1 dd")
             price_for_m2 = ""
             m2 = ""
             while (True):
-                temp = str(arr[0].get_text())
+                temp = arr[0].get_text()
                 if temp.__contains__("zł/m²"):
                     temp = temp.replace(u'\xa0', u" ")
                     price_for_m2 = temp
                 elif temp.__contains__(" m²"):
                     temp = temp.replace(u'\xa0', u" ")
                     m2 = temp
-
                 arr.pop(0)
                 if len(arr) == 0 or (price_for_m2 != '' and m2 != ''): break
-                # if price_for_m2 != '' and m2 != '': break
-            home_offers[i + 1] = Home(title, address, price, price_for_m2, m2)
-            # fieldnames = ["Number", "Name", "Address", "Price", "Price for square meter", "Apartment area"]
 
+            home_offers[i + 1] = Home(title, address, price, price_for_m2, m2)
             writer.writerow({"Number": str(i + 1), "Name": str(title), "Address": str(address), "Price": str(price),
                              "Price for square meter": str(price_for_m2), "Apartment area": str(m2)})
-            # writer.writerow({"Number": str(i+1), "Name": str(title), "Address": str(address), "Price": str(price), "Price for square meter": str(price_for_m2), "Apartment area": str(m2)})
-            # data.writerow([f"{i+1}", f"{title}", f"{address}", f"{price}", f"{price_for_m2}", f"{m2}"])
             home_offers[i + 1].print_values()
