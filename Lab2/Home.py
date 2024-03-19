@@ -7,4 +7,12 @@ class Home:
         self.m2 = m2
 
     def print_values(self):
-        print(f"{self.header_name} | {self.address} | {self.price} | {self.price_for_m2} | {self.m2}")
+        print(f"====================================================================\n"
+              f"Name: {self.header_name}\n"
+              f"Address: {self.address}\n"
+              f"Price: {self.price}\n"
+              f"Price for square meter: {self.price_for_m2}\n"
+              f"Apartment area: {self.m2}\n"
+              f"====================================================================\n")
+
+
