@@ -13,6 +13,7 @@ def values():
     cur.execute(values_studentGroup())
     cur.execute(values_subject())
     cur.execute(values_university())
+    con.commit()
 
 
 def values_department():
@@ -69,16 +70,16 @@ def values_attends():
 
 def values_student():
     return """
-        INSERT INTO `student` (`albumNumber`, `firstName`, `lastName`, `averageGrade`, `mail`, `groupID`) VALUES
-            (2137, 'Papież', 'Polak', 4.75, 'p.polak@student.amw.gdynia.pl', 211),
-            (20000, 'Karol', 'Wojtyła', 3.5, 'k.wojtyla@student.amw.gdynia.pl', 211),
-            (20001, 'Jadwiga', 'Hymel', 3, 'j.hymel@student.amw.gdynia.pl', 211),
-            (20002, 'Mariusz', 'Pudzianowski', 3.5, 'm.pudzianowski@student.amw.gdynia.pl', 215),
-            (20003, 'Kamil', 'Ślimak', 4.33333, 'k.slimak@student.amw.gdynia.pl', 215),
-            (20004, 'Anna Maria', 'Wesołowska', 3.5, 'a.wesolowska@student.amw.gdynia.pl', 211),
-            (20005, 'Korneliusz', 'Kołodziej', NULL, 'k.kolodziej@student.amw.gdynia.pl', 212),
-            (20006, 'Natan', 'Mróz', 2.83333, 'n.mroz@student.amw.gdynia.pl', 215),
-            (20007, 'Andrzej', 'Wójcik', 3.33333, 'a.wojcik@student.amw.gdynia.pl', 215);
+        INSERT INTO `student` (`albumNumber`, `firstName`, `lastName`, `mail`, `groupID`) VALUES
+            (2137, 'Papież', 'Polak', 'p.polak@student.amw.gdynia.pl', 211),
+            (20000, 'Karol', 'Wojtyła', 'k.wojtyla@student.amw.gdynia.pl', 211),
+            (20001, 'Jadwiga', 'Hymel', 'j.hymel@student.amw.gdynia.pl', 211),
+            (20002, 'Mariusz', 'Pudzianowski', 'm.pudzianowski@student.amw.gdynia.pl', 215),
+            (20003, 'Kamil', 'Ślimak', 'k.slimak@student.amw.gdynia.pl', 215),
+            (20004, 'Anna Maria', 'Wesołowska', 'a.wesolowska@student.amw.gdynia.pl', 211),
+            (20005, 'Korneliusz', 'Kołodziej', 'k.kolodziej@student.amw.gdynia.pl', 212),
+            (20006, 'Natan', 'Mróz', 'n.mroz@student.amw.gdynia.pl', 215),
+            (20007, 'Andrzej', 'Wójcik', 'a.wojcik@student.amw.gdynia.pl', 215);
     """
 
 

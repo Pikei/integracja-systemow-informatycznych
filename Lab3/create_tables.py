@@ -60,7 +60,6 @@ def create_student():
             albumNumber INT NOT NULL,
             firstName VARCHAR(50) NOT NULL,
             lastName VARCHAR(100) NOT NULL,
-            averageGrade FLOAT DEFAULT NULL,
             mail INT NOT NULL,
             groupID INT,
             PRIMARY KEY (`albumNumber`),
