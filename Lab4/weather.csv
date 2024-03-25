@@ -1,0 +1,169 @@
+Time,Temperature[°C],Rain,Overall
+2024-04-15T00:00,9.0,0%,pochmurno
+2024-04-15T01:00,8.5,0%,pochmurno
+2024-04-15T02:00,8.3,0%,pochmurno
+2024-04-15T03:00,8.2,0%,pochmurno
+2024-04-15T04:00,8.1,0%,pochmurno
+2024-04-15T05:00,8.1,0%,pochmurno
+2024-04-15T06:00,8.4,0%,pochmurno
+2024-04-15T07:00,9.1,0%,częściowo pochmurno
+2024-04-15T08:00,10.4,0%,częściowo pochmurno
+2024-04-15T09:00,11.2,0%,pochmurno
+2024-04-15T10:00,11.9,10%,pochmurno
+2024-04-15T11:00,12.2,0%,pochmurno
+2024-04-15T12:00,12.9,10%,pochmurno
+2024-04-15T13:00,13.7,0%,pochmurno
+2024-04-15T14:00,13.8,0%,pochmurno
+2024-04-15T15:00,14.5,0%,pochmurno
+2024-04-15T16:00,14.4,0%,pochmurno
+2024-04-15T17:00,14.4,0%,pochmurno
+2024-04-15T18:00,12.2,0%,deszcz słaby
+2024-04-15T19:00,11.6,0%,przelotne opady deszczu: słabe
+2024-04-15T20:00,11.4,0%,pochmurno
+2024-04-15T21:00,7.6,80%,deszcz słaby
+2024-04-15T22:00,7.3,50%,deszcz słaby
+2024-04-15T23:00,6.8,0%,częściowo pochmurno
+2024-04-16T00:00,6.3,0%,częściowo pochmurno
+2024-04-16T01:00,5.7,0%,głównie bezchmurnie
+2024-04-16T02:00,5.5,0%,częściowo pochmurno
+2024-04-16T03:00,5.3,0%,pochmurno
+2024-04-16T04:00,5.3,0%,pochmurno
+2024-04-16T05:00,5.3,0%,przelotne opady deszczu: słabe
+2024-04-16T06:00,5.6,0%,przelotne opady deszczu: słabe
+2024-04-16T07:00,6.0,10%,przelotne opady deszczu: słabe
+2024-04-16T08:00,6.8,0%,przelotne opady deszczu: słabe
+2024-04-16T09:00,7.7,10%,przelotne opady deszczu: słabe
+2024-04-16T10:00,8.4,0%,przelotne opady deszczu: słabe
+2024-04-16T11:00,10.3,0%,pochmurno
+2024-04-16T12:00,10.8,0%,pochmurno
+2024-04-16T13:00,11.3,0%,pochmurno
+2024-04-16T14:00,11.4,0%,pochmurno
+2024-04-16T15:00,11.0,0%,pochmurno
+2024-04-16T16:00,9.0,0%,deszcz słaby
+2024-04-16T17:00,8.0,0%,deszcz słaby
+2024-04-16T18:00,6.7,0%,deszcz słaby
+2024-04-16T19:00,6.1,0%,pochmurno
+2024-04-16T20:00,5.7,0%,pochmurno
+2024-04-16T21:00,5.3,0%,pochmurno
+2024-04-16T22:00,4.8,0%,pochmurno
+2024-04-16T23:00,4.6,0%,pochmurno
+2024-04-17T00:00,4.5,0%,pochmurno
+2024-04-17T01:00,4.4,0%,pochmurno
+2024-04-17T02:00,4.3,0%,pochmurno
+2024-04-17T03:00,3.7,0%,pochmurno
+2024-04-17T04:00,3.6,0%,pochmurno
+2024-04-17T05:00,3.8,0%,częściowo pochmurno
+2024-04-17T06:00,4.5,0%,głównie bezchmurnie
+2024-04-17T07:00,5.3,0%,częściowo pochmurno
+2024-04-17T08:00,7.0,0%,pochmurno
+2024-04-17T09:00,8.5,0%,pochmurno
+2024-04-17T10:00,9.2,0%,pochmurno
+2024-04-17T11:00,9.2,0%,pochmurno
+2024-04-17T12:00,10.1,0%,głównie bezchmurnie
+2024-04-17T13:00,9.9,0%,częściowo pochmurno
+2024-04-17T14:00,10.5,0%,częściowo pochmurno
+2024-04-17T15:00,11.4,0%,częściowo pochmurno
+2024-04-17T16:00,11.1,0%,częściowo pochmurno
+2024-04-17T17:00,10.2,0%,częściowo pochmurno
+2024-04-17T18:00,8.7,0%,głównie bezchmurnie
+2024-04-17T19:00,7.6,0%,głównie bezchmurnie
+2024-04-17T20:00,6.7,0%,czyste niebo
+2024-04-17T21:00,5.9,0%,głównie bezchmurnie
+2024-04-17T22:00,5.2,0%,czyste niebo
+2024-04-17T23:00,4.4,0%,czyste niebo
+2024-04-18T00:00,3.6,0%,czyste niebo
+2024-04-18T01:00,3.0,0%,czyste niebo
+2024-04-18T02:00,2.5,0%,głównie bezchmurnie
+2024-04-18T03:00,2.1,0%,głównie bezchmurnie
+2024-04-18T04:00,1.7,0%,głównie bezchmurnie
+2024-04-18T05:00,1.7,0%,głównie bezchmurnie
+2024-04-18T06:00,2.6,0%,częściowo pochmurno
+2024-04-18T07:00,4.1,0%,częściowo pochmurno
+2024-04-18T08:00,6.1,0%,częściowo pochmurno
+2024-04-18T09:00,7.8,0%,częściowo pochmurno
+2024-04-18T10:00,8.8,0%,pochmurno
+2024-04-18T11:00,9.5,0%,pochmurno
+2024-04-18T12:00,10.0,0%,pochmurno
+2024-04-18T13:00,10.4,0%,pochmurno
+2024-04-18T14:00,10.7,0%,pochmurno
+2024-04-18T15:00,10.8,0%,pochmurno
+2024-04-18T16:00,10.6,0%,głównie bezchmurnie
+2024-04-18T17:00,10.3,0%,głównie bezchmurnie
+2024-04-18T18:00,9.7,0%,głównie bezchmurnie
+2024-04-18T19:00,8.8,0%,częściowo pochmurno
+2024-04-18T20:00,7.7,0%,częściowo pochmurno
+2024-04-18T21:00,6.8,0%,częściowo pochmurno
+2024-04-18T22:00,6.3,0%,częściowo pochmurno
+2024-04-18T23:00,6.1,0%,częściowo pochmurno
+2024-04-19T00:00,5.8,0%,częściowo pochmurno
+2024-04-19T01:00,5.4,0%,częściowo pochmurno
+2024-04-19T02:00,4.9,0%,częściowo pochmurno
+2024-04-19T03:00,4.6,0%,częściowo pochmurno
+2024-04-19T04:00,4.6,0%,pochmurno
+2024-04-19T05:00,4.8,0%,pochmurno
+2024-04-19T06:00,5.3,0%,pochmurno
+2024-04-19T07:00,6.3,0%,pochmurno
+2024-04-19T08:00,7.5,0%,pochmurno
+2024-04-19T09:00,8.6,0%,pochmurno
+2024-04-19T10:00,9.3,0%,przelotne opady deszczu: słabe
+2024-04-19T11:00,9.7,0%,przelotne opady deszczu: słabe
+2024-04-19T12:00,9.9,0%,przelotne opady deszczu: słabe
+2024-04-19T13:00,9.6,30%,deszcz słaby
+2024-04-19T14:00,9.0,30%,deszcz słaby
+2024-04-19T15:00,8.5,30%,deszcz słaby
+2024-04-19T16:00,8.3,100%,deszcz umiarkowany
+2024-04-19T17:00,8.1,100%,deszcz umiarkowany
+2024-04-19T18:00,8.0,100%,deszcz umiarkowany
+2024-04-19T19:00,7.8,50%,przelotne opady deszczu: słabe
+2024-04-19T20:00,7.6,50%,przelotne opady deszczu: słabe
+2024-04-19T21:00,7.4,50%,przelotne opady deszczu: słabe
+2024-04-19T22:00,7.1,40%,deszcz słaby
+2024-04-19T23:00,6.7,40%,deszcz słaby
+2024-04-20T00:00,6.4,40%,deszcz słaby
+2024-04-20T01:00,6.1,40%,pochmurno
+2024-04-20T02:00,5.7,40%,pochmurno
+2024-04-20T03:00,5.3,40%,pochmurno
+2024-04-20T04:00,5.0,10%,pochmurno
+2024-04-20T05:00,4.6,10%,pochmurno
+2024-04-20T06:00,4.7,10%,pochmurno
+2024-04-20T07:00,5.3,0%,częściowo pochmurno
+2024-04-20T08:00,6.3,0%,częściowo pochmurno
+2024-04-20T09:00,7.3,0%,częściowo pochmurno
+2024-04-20T10:00,8.4,0%,częściowo pochmurno
+2024-04-20T11:00,9.5,0%,częściowo pochmurno
+2024-04-20T12:00,10.3,0%,częściowo pochmurno
+2024-04-20T13:00,10.4,0%,pochmurno
+2024-04-20T14:00,10.2,0%,pochmurno
+2024-04-20T15:00,9.9,0%,pochmurno
+2024-04-20T16:00,9.5,0%,czyste niebo
+2024-04-20T17:00,8.9,0%,czyste niebo
+2024-04-20T18:00,8.3,0%,czyste niebo
+2024-04-20T19:00,7.6,0%,częściowo pochmurno
+2024-04-20T20:00,6.8,0%,częściowo pochmurno
+2024-04-20T21:00,6.1,0%,częściowo pochmurno
+2024-04-20T22:00,5.6,0%,pochmurno
+2024-04-20T23:00,5.3,0%,pochmurno
+2024-04-21T00:00,5.0,0%,pochmurno
+2024-04-21T01:00,4.7,30%,częściowo pochmurno
+2024-04-21T02:00,4.6,30%,częściowo pochmurno
+2024-04-21T03:00,4.3,30%,częściowo pochmurno
+2024-04-21T04:00,3.8,0%,pochmurno
+2024-04-21T05:00,3.3,0%,pochmurno
+2024-04-21T06:00,3.2,0%,pochmurno
+2024-04-21T07:00,3.8,20%,pochmurno
+2024-04-21T08:00,4.7,20%,pochmurno
+2024-04-21T09:00,5.7,20%,pochmurno
+2024-04-21T10:00,6.6,0%,przelotne opady deszczu: słabe
+2024-04-21T11:00,7.5,0%,przelotne opady deszczu: słabe
+2024-04-21T12:00,8.2,0%,przelotne opady deszczu: słabe
+2024-04-21T13:00,8.6,0%,pochmurno
+2024-04-21T14:00,8.8,0%,pochmurno
+2024-04-21T15:00,8.7,0%,pochmurno
+2024-04-21T16:00,8.2,0%,pochmurno
+2024-04-21T17:00,7.5,0%,pochmurno
+2024-04-21T18:00,6.8,0%,pochmurno
+2024-04-21T19:00,6.2,0%,częściowo pochmurno
+2024-04-21T20:00,5.6,0%,częściowo pochmurno
+2024-04-21T21:00,5.1,0%,częściowo pochmurno
+2024-04-21T22:00,4.8,0%,pochmurno
+2024-04-21T23:00,4.6,0%,pochmurno
