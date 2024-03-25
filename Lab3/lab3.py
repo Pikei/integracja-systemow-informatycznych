@@ -1,4 +1,5 @@
 import sqlite3
+import time
 import Lab3.create_tables as create
 import Lab3.add_values as add
 import Lab3.actions as actions
@@ -7,7 +8,11 @@ import Lab3.actions as actions
 def start():
     try:
         create.tables()
+        print("Created database.")
+        time.sleep(1)
+        print("Added values to tables.")
         add.values()
+        time.sleep(1)
         choice()
     except sqlite3.OperationalError:
         choice()
@@ -35,7 +40,6 @@ def choice():
         case "6":
             actions.print_avg_grade()
         case _:
-            import time
             print("\nWrong option!\n")
             time.sleep(1)
             choice()
