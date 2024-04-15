@@ -93,7 +93,7 @@ def meteo():
     plt.figure(figsize=(11, 11))
     plt.plot(today,temp)
     plt.title(f"Temperature for:{todaysDate}")
-    plt.xlabel("Time hourly for 7 days")
+    plt.xlabel("Time hourly")
     plt.ylabel("Temperature[°C]")
     plt.xticks(rotation=90)
     plt.autoscale()
