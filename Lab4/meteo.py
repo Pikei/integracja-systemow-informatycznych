@@ -2,7 +2,6 @@ import csv
 import matplotlib.pyplot as plt
 import requests
 
-
 def meteo():
     weather_codes = {
         0: "czyste niebo",
