@@ -97,5 +97,5 @@ def meteo():
     plt.ylabel("Temperature[°C]")
     plt.xticks(rotation=90)
     plt.autoscale()
-    plt.savefig("Forecast.png")
+    plt.savefig("Lab4/Forecast.png")
     plt.show()
